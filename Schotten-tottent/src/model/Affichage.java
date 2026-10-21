@@ -1,6 +1,11 @@
 import java.util.ArrayList;
 
 public class Affichage {
+
+    public Joueur instancierClass()
+    {
+        return new Joueur();
+    }
     public static void main(String[] args) {
 
         ArrayList<CarteTactique> pileTactique = new ArrayList<>();
