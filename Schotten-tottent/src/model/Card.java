@@ -1,12 +1,14 @@
 package model;
 
-public class Carte {
+public class Card {
+
     private String description;
-    public String getDescription(){
+
+    public String getDescription() {
         return description;
     }
 
-    public void setDescription(String description){
+    public void setDescription(String description) {
         this.description = description;
     }
 }

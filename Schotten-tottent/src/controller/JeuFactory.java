@@ -1,8 +1,8 @@
 
 public class JeuFactory {
 
-    public Joueur instancierClass()
+    public Player instancierClass()
     {
-        return new Joueur();
+        return new Player();
     }
 }
