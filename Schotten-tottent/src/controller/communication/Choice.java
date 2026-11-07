@@ -1,9 +1,9 @@
 package controller.communication;
 
 public class Choice {
-    private int id; 
-    private String value; 
-    private String description;
+    private final int id; 
+    private final String value; 
+    private final String description;
 
     public Choice(int id, String value, String description) {
         this.id = id;
@@ -22,9 +22,4 @@ public class Choice {
     public String getDescription() {
         return description;
     }
-
-    
-
-
-
 }
