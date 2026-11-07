@@ -2,42 +2,42 @@ package controller.communication;
 
 import java.util.List;
 
-import model.Carte;
+import model.Card;
 
 public class GameMessage {
 
     // Static ID counters
-    private static int lastRequestId = 1;
-    private static int lastWorkflowId = 1;
+    private static int nextRequestId = 1;
+    private static int currentWorkflowId = 1;
 
     // Identification
-    private int requestId;
-    private int workflowId;
+    private final int requestId;
+    private final int workflowId;
 
     // Type and content
-    private MessageType type;
-    private String description;
+    private final MessageType type;
+    private final String description;
     private String errorMessage;
 
     // Game State
-    private BoardState boardState;
-    private String boardDisplay;
-    private List<Carte> playerHand;
+    private final BoardState boardState;
+    private final String boardDisplay;
+    private final List<Card> playerHand;
 
     // Possible choices
-    private List<Choice> possibleChoices;
+    private final List<Choice> possibleChoices;
 
     public GameMessage(
         MessageType type,
         String description,
         BoardState boardState,
         String boardDisplay,
-        List<Carte> playerHand,
+        List<Card> playerHand,
         List<Choice> possibleChoices
     )
     {
-        this.requestId = lastRequestId++;
-        this.workflowId = lastWorkflowId;
+        this.requestId = nextRequestId++;
+        this.workflowId = currentWorkflowId;
         this.type = type;
         this.description = description;
         this.errorMessage = null;
@@ -48,23 +48,15 @@ public class GameMessage {
     }
 
     public static void incrementWorkflowId(){
-        lastWorkflowId++;
+        currentWorkflowId++;
     }
 
     public MessageType getType() {
         return type;
     }
 
-    public void setType(MessageType type) {
-        this.type = type;
-    }
-
     public String getDescription() {
         return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 
     public String getErrorMessage() {
@@ -79,27 +71,24 @@ public class GameMessage {
         return boardDisplay;
     }
 
-    public void setBoardDisplay(String boardDisplay) {
-        this.boardDisplay = boardDisplay;
-    }
-
-    public List<Carte> getPlayerHand() {
+    public List<Card> getPlayerHand() {
         return playerHand;
-    }
-
-    public void setPlayerHand(List<Carte> playerHand) {
-        this.playerHand = playerHand;
     }
 
     public List<Choice> getPossibleChoices() {
         return possibleChoices;
     }
 
-    public void setPossibleChoices(List<Choice> possibleChoices) {
-        this.possibleChoices = possibleChoices;
+    public int getRequestId() {
+        return requestId;
     }
 
-    
+    public int getWorkflowId() {
+        return workflowId;
+    }
 
+    public BoardState getBoardState() {
+        return boardState;
+    }
 
 }
