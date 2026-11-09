@@ -1,6 +1,11 @@
-package controller.game;
+package controller.game.factory;
 
 import java.util.List;
+
+import controller.game.Game;
+import controller.game.modes.ClassicGame;
+import controller.game.modes.ExpertGame;
+import controller.game.modes.TacticGame;
 import model.Player;
 
 public final class GameFactory {

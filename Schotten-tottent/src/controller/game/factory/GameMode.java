@@ -1,4 +1,4 @@
-package controller.game;
+package controller.game.factory;
 
 public enum GameMode {
     CLASSIC,
