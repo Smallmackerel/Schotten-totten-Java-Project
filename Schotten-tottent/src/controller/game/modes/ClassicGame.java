@@ -1,0 +1,21 @@
+package controller.game.modes;
+
+import java.util.List;
+
+import controller.game.Game;
+import model.Player;
+
+public class ClassicGame extends Game{
+
+    public ClassicGame(List<Player> players) {
+        super(players);
+        //TODO Auto-generated constructor stub
+    }
+
+    @Override
+    public void play() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'play'");
+    }
+    
+}
