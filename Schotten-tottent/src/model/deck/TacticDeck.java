@@ -1,11 +1,10 @@
-package model;
+package model.deck;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import model.card.clanCard.ClanCard;
 import model.card.tacticCard.TacticCard;
-import model.deck.Deck;
 
 public class TacticDeck extends Deck {
 
