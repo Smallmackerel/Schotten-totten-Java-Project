@@ -1,12 +1,12 @@
-package model;
+package model.player;
 
 import controller.communication.GameMessage;
 import controller.communication.PlayerResponse;
 
 public class HumanPlayer extends Player {
 
-    Public HumanPlayer(){
-
+    public HumanPlayer(String name, PlayerSide side){
+        super(name, side);
     }
 
     @Override
