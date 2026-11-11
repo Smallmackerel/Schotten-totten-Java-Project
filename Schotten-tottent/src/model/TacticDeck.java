@@ -3,6 +3,9 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
+import model.card.clanCard.ClanCard;
+import model.card.tacticCard.TacticCard;
+
 public class TacticDeck extends Deck {
 
     private List<TacticCard> tacticCards = new ArrayList<>();

@@ -3,6 +3,8 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
+import model.card.Card;
+
 public class Deck {
 
     private List<Card> cards = new ArrayList<>();

@@ -2,7 +2,7 @@ package controller.communication;
 
 import java.util.List;
 
-import model.Card;
+import model.card.Card;
 
 public class GameMessage {
 

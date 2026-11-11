@@ -3,7 +3,7 @@ package controller.game;
 import java.util.ArrayList;
 import java.util.List;
 import model.Battlefield;
-import model.Player;
+import model.player.Player;
 
 public abstract class Game {
 

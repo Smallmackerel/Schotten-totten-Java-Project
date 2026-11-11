@@ -3,6 +3,10 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
+import model.card.Card;
+import model.card.tacticCard.TacticCard;
+import model.player.Player;
+
 public class Battlefield {
 
     private static int counter = 0;

@@ -1,10 +1,11 @@
-package model;
+package model.player;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import controller.communication.GameMessage;
 import controller.communication.PlayerResponse;
+import model.card.Card;
 
 public abstract class Player {
 

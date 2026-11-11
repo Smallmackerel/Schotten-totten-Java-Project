@@ -6,7 +6,7 @@ import controller.game.Game;
 import controller.game.modes.ClassicGame;
 import controller.game.modes.ExpertGame;
 import controller.game.modes.TacticGame;
-import model.Player;
+import model.player.Player;
 
 public final class GameFactory {
 

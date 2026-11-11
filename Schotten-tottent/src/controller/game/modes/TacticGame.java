@@ -3,7 +3,7 @@ package controller.game.modes;
 import java.util.List;
 
 import controller.game.Game;
-import model.Player;
+import model.player.Player;
 
 public class TacticGame extends Game{
 
