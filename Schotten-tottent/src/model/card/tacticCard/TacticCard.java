@@ -1,4 +1,6 @@
-package model;
+package model.card.tacticCard;
+
+import model.card.Card;
 
 public class TacticCard extends Card {
 
