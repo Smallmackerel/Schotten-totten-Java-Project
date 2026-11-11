@@ -1,4 +1,6 @@
-package model;
+package model.card.clanCard;
+
+import model.card.Card;
 
 public class ClanCard extends Card {
 
