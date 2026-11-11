@@ -1,14 +1,17 @@
-package model;
+package model.player;
 
-public class AI extends Player {
+import controller.communication.GameMessage;
+import controller.communication.PlayerResponse;
 
-    private int level;
+public class AIPlayer extends Player {
 
-    public int getLevel() {
-        return level;
+    public AIPlayer(String name, PlayerSide side) {
+        super(name, side);
     }
 
-    public void setLevel(int level) {
-        this.level = level;
+    @Override
+    public PlayerResponse receive(GameMessage gameMessage) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'receive'");
     }
 }
