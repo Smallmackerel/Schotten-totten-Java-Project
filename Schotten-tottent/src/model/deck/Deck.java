@@ -1,19 +1,29 @@
 package model.deck;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import model.card.Card;
 
-public class Deck {
+public abstract class Deck {
 
-    private List<Card> cards = new ArrayList<>();
+    protected List<Card> cards = new ArrayList<>();
 
-    public List<Card> getCards() {
-        return cards;
+    protected abstract void initialize();
+
+    public void shuffle() {
+        Collections.shuffle(cards);
     }
 
-    public void setCards(List<Card> cards) {
-        this.cards = cards;
+    public Card drawCard() {
+        if (this.cards.isEmpty()) {
+            return null;
+        }
+        return this.cards.remove(cards.size() - 1);
+    }
+
+    public int getRemainingCards() {
+        return this.cards.size();
     }
 }

@@ -5,7 +5,7 @@ import model.card.Card;
 public class ClanCard extends Card {
 
     private int value;
-    private String color;
+    private Colors color;
 
     public int getValue() {
         return value;
@@ -15,11 +15,11 @@ public class ClanCard extends Card {
         this.value = value;
     }
 
-    public String getColor() {
+    public Colors getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(Colors color) {
         this.color = color;
     }
 }
