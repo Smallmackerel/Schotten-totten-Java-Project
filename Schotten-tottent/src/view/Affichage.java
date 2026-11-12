@@ -8,7 +8,7 @@ public class Affichage {
     }
     public static void main(String[] args) {
 
-        ArrayList<CarteTactique> pileTactique = new ArrayList<>();
+        ArrayList<> pileTactique = new ArrayList<>();
         ArrayList<CarteClan> pileClan = new ArrayList<>();
         
         ArrayList<Joueur> joueurs = new ArrayList<>();
@@ -59,7 +59,7 @@ public class Affichage {
         }
 
         for(int i = 0; i<9 ; i++){
-            System.out.println("  " + onTile.(i) + "  ")
+            System.out.println("  " + onTile.(i) + "  ");
         }
 
         for (int i = 0; i < 3; i++){
