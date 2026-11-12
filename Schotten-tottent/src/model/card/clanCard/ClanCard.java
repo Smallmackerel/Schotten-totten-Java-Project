@@ -7,6 +7,12 @@ public class ClanCard extends Card {
     private int value;
     private Colors color;
 
+    public ClanCard(String description, int value, Colors color) {
+        super(description);
+        this.value = value;
+        this.color = color;
+    }
+
     public int getValue() {
         return value;
     }
