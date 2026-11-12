@@ -16,6 +16,10 @@ public abstract class Deck {
         Collections.shuffle(cards);
     }
 
+    public void addCard(Card card) {
+        this.cards.add(card);
+    }
+
     public Card drawCard() {
         if (this.cards.isEmpty()) {
             return null;
@@ -26,4 +30,5 @@ public abstract class Deck {
     public int getRemainingCards() {
         return this.cards.size();
     }
+
 }
